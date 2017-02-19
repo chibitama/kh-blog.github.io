@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kingdom Hearts</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/mycustomizations.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+
+
+</head>
+<body class="bodycolor container" ng-app="app">
+
+<div class="container">
+
+
+    <img src="images/kh2.PNG" width="100%">
+    <nav class="navbar navbar-inverse bannercolor fontstyle">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">KH Blog</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="news.html">News</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Video
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="trailers.html">Trailers</a></li>
+                        <li><a href="openings.html">Openings</a></li>
+                        <li><a href="cutscenes.html">Cutscenes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class = "starter-template">
+
+        <h1>Cutscenes</h1>
+        <hr>
+
+        <button ui-sref="kh1" class="button-p">Kingdom Hearts</button>
+        <button ui-sref="khrcom" class="button-p"> Kingdom Hearts Re:Chain of Memories</button>
+        <button ui-sref="kh2" class="button-p">Kingdom Hearts II</button>
+        <button ui-sref="kh3582" class="button-p">Kingdom Hearts 358/2</button>
+        <button ui-sref="khbbs" class="button-p">Kingdom Hearts Birth By Sleep</button>
+        <button ui-sref="kh3d" class="button-p">Kingdom Hearts Dream Drop Distance</button>
+
+        <div class="container">
+            <div ui-view></div>
+        </div>
+
+</div>
+
+
+
+</body>
+</html>

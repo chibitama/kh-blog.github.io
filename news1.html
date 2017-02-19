@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kingdom Hearts</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/mycustomizations.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="js/controllers1.js"></script>
+    <script src="js/app1.js"></script>
+
+</head>
+<body class="bodycolor container" ng-app="app1">
+
+<div class="container">
+
+
+    <img src="images/kh2.PNG" width="100%">
+    <nav class="navbar navbar-inverse bannercolor fontstyle">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">KH Blog</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+
+                <li class="active"><a href="news.html">News</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Video
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="trailers.html">Trailers</a></li>
+                        <li><a href="openings.html">Openings</a></li>
+                        <li><a href="cutscenes.html">Cutscenes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="starter-template">
+
+        
+
+        <div class="card " >
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card-image card-100">
+                            <a class="grey-text text-darken-2" href="news1.html">
+                                <img src="http://www.khinsider.com/layout/articleimages/15xs714.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+
+                        <h2>Playstation JP reveals KINGDOM HEARTS HD 1.5 + 2.5 Main Menu</h2>
+
+                        <dl class="article-info">
+                            <dt class="article-info-term">Details</dt>
+                            <dd class="published">Published on February 13, 2017 @ 10:41 pm</dd>
+                            <dd class="createdby">
+                                Written by <a href="http://forums.khinsider.com/member.php?u=89972">Cecily</a>		</dd>
+                            <!--<dd class="games">
+                                <br /><b>Linked games</b> : <a href="http://www.khinsider.com/kingdom-hearts-hd-remix">KINGDOM HEARTS HD 1.5 + 2.5 ReMIX</a>
+                            </dd>-->
+                        </dl>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="card card-content news-content">
+                        <a href="http://www.jp.playstation.com/software/title/pljm84068.html">Playstation Japan</a>
+                        shared several screenshots of the upcoming PS4 remaster, KINGDOM HEARTS HD 1.5+2.5 ReMix.
+                        Among them is a screenshot showing off the main menu screen, featuring all 6 titles available in the collection,
+                        listed in order as they appear in the original PS3 versions.
+                    </p>
+                    <p class="card card-content news-content">
+                        <a href="http://images.khinsider.com/Kingdom%20Hearts%201.5%20&amp;%202.5/Images/Screens/1.5%20+%202.5%20Menu.png">
+                            <img class="image" src="http://images.khinsider.com/Kingdom%20Hearts%201.5%20&amp;%202.5/Images/Screens/1.5%20+%202.5%20Menu.png" alt="" width="400" height="225">
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div ui-view></div>
+
+        </div>
+
+        <a href="news.html">Back to News</a>
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
